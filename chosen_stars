@@ -1,0 +1,912 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.3"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.3-3 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2019-08-27T21:39:59
+ !-->
+<RESOURCE>
+<RESOURCE>
+  <COOSYS ID="t1-coosys-1" equinox="J2000" system="eq_FK5"/>
+</RESOURCE>
+<TABLE name="II/50/ubv" nrows="37">
+<DESCRIPTION>
+Photometric standard stars
+</DESCRIPTION>
+<PARAM arraysize="4" datatype="char" name="matches" value="2036">
+<DESCRIPTION>matching records</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="44" datatype="char" name="Warning" value="increase the precision for computed column 8"/>
+<PARAM arraysize="44" datatype="char" name="Warning" value="increase the precision for computed column 8"/>
+<PARAM arraysize="47" datatype="char" name="Warning" value="main column 1098 - link column not generated HD"/>
+<PARAM arraysize="57" datatype="char" name="Warning" value="Missing UCD2 in table: II/50/ubv (Simbad) ucd1=530 ucd2=0"/>
+<PARAM arraysize="19" datatype="char" name="votable-version" value="1.99+ (14-Oct-2013)"/>
+<PARAM arraysize="9" datatype="char" name="-ref" value="VOTx11420"/>
+<PARAM arraysize="5" datatype="char" name="-out.max" value="50000"/>
+<PARAM arraysize="1" datatype="char" name="queryParameters" value="4">
+<DESCRIPTION>-oc.form=dec
+-source=II/50
+-out.add=_RAJ,_DEJ
+-out.max=50000</DESCRIPTION>
+</PARAM>
+<FIELD datatype="double" name="_RAJ2000" precision="7" ref="t1-coosys-1" ucd="pos.eq.ra" unit="deg" width="11">
+<DESCRIPTION>Right ascension (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DEJ2000" precision="7" ref="t1-coosys-1" ucd="pos.eq.dec" unit="deg" width="11">
+<DESCRIPTION>Declination (FK5, Equinox=J2000.0) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="int" name="HD" ucd="meta.id;meta.main" width="6">
+<DESCRIPTION>HD identifier of the star (Cat. III/135)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="m_HD" ucd="meta.code.multip">
+<DESCRIPTION>[/] '/' indicates a blend with next HD number</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="Vmag" precision="3" ucd="phot.mag;em.opt.V" unit="mag" width="6">
+<DESCRIPTION>? Magnitude in Johnson V filter</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="u_Vmag" ucd="meta.code.error">
+<DESCRIPTION>[:)] doubtful value (:), variable value ())</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="e_Vmag" precision="3" ucd="stat.error;phot.mag;em.opt.V" unit="mag" width="6">
+<DESCRIPTION>? Dispersion on Vmag</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="w_Vmag" precision="2" ucd="stat.weight" width="5">
+<DESCRIPTION>? Weight on Vmag</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="B-V" precision="3" ucd="phot.color;em.opt.B;em.opt.V" unit="mag" width="6">
+<DESCRIPTION>? Mean Johnson B-V colour index</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="u_B-V" ucd="meta.code.error;phot.color;em.opt.B">
+<DESCRIPTION>[:)] doubtful value (:), variable value ())</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="e_B-V" precision="3" ucd="stat.error;phot.color;em.opt.B" unit="mag" width="6">
+<DESCRIPTION>? Dispersion on B-V</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="w_B-V" precision="2" ucd="stat.weight" width="5">
+<DESCRIPTION>? Weight on B-V</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="U-B" precision="2" ucd="phot.color;em.opt.U;em.opt.B" unit="mag" width="5">
+<DESCRIPTION>? Mean Johnson U-B colour index</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="u_U-B" ucd="meta.code.error;phot.color;em.opt.U">
+<DESCRIPTION>[:)] doubtful value (:), variable value ())</DESCRIPTION>
+</FIELD>
+<FIELD datatype="float" name="w_U-B" precision="2" ucd="stat.weight" width="5">
+<DESCRIPTION>? Weight on U-B (quarters assigned)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="1" datatype="char" name="S" ucd="meta.ref;phot.color;em.opt.U">
+<DESCRIPTION>[CA*] Source of U-B value: C=Cape only, A=Catalina station (Arizona), *=discordant values.</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Notes" ucd="meta.note">
+<DESCRIPTION>Remarks (variable star name, binarity)</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="Simbad">
+<DESCRIPTION>Simbad column added by the CDS</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_RA" precision="5" ref="t1-coosys-1" ucd="pos.eq.ra;meta.main" unit="deg" width="9">
+<DESCRIPTION>Right Ascension (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="_DE" precision="5" ref="t1-coosys-1" ucd="pos.eq.dec;meta.main" unit="deg" width="9">
+<DESCRIPTION>Declination (J2000) from SIMBAD (not part of the original data)</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>55.5620944</TD>
+    <TD>-31.9383614</TD>
+    <TD>23227</TD>
+    <TD></TD>
+    <TD>4.995</TD>
+    <TD></TD>
+    <TD>0.01</TD>
+    <TD>3.5</TD>
+    <TD>-0.165</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.0</TD>
+    <TD>-0.6</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>55.56209</TD>
+    <TD>-31.93836</TD>
+  </TR>
+  <TR>
+    <TD>208.3022458</TD>
+    <TD>-31.9276122</TD>
+    <TD>120955</TD>
+    <TD></TD>
+    <TD>4.715</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>1.5</TD>
+    <TD>-0.145</TD>
+    <TD></TD>
+    <TD>0.01</TD>
+    <TD>1.7</TD>
+    <TD>-0.54</TD>
+    <TD></TD>
+    <TD>2.0</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>208.30225</TD>
+    <TD>-31.92761</TD>
+  </TR>
+  <TR>
+    <TD>173.2504814</TD>
+    <TD>-31.8576253</TD>
+    <TD>100407</TD>
+    <TD></TD>
+    <TD>3.545</TD>
+    <TD></TD>
+    <TD>0.01</TD>
+    <TD>5.0</TD>
+    <TD>0.955</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>5.0</TD>
+    <TD>0.72</TD>
+    <TD></TD>
+    <TD>2.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>173.25048</TD>
+    <TD>-31.85763</TD>
+  </TR>
+  <TR>
+    <TD>267.2936508</TD>
+    <TD>-31.7032036</TD>
+    <TD>161840</TD>
+    <TD></TD>
+    <TD>4.825</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>2.5</TD>
+    <TD>-0.04</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>2.5</TD>
+    <TD>-0.3</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>267.29365</TD>
+    <TD>-31.7032</TD>
+  </TR>
+  <TR>
+    <TD>228.6554967</TD>
+    <TD>-31.5191211</TD>
+    <TD>135153</TD>
+    <TD></TD>
+    <TD>4.9</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>1.5</TD>
+    <TD>0.38</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>1.5</TD>
+    <TD>0.27</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>228.6555</TD>
+    <TD>-31.51912</TD>
+  </TR>
+  <TR>
+    <TD>156.7879214</TD>
+    <TD>-31.0677789</TD>
+    <TD>90610</TD>
+    <TD></TD>
+    <TD>4.25</TD>
+    <TD></TD>
+    <TD>0.011</TD>
+    <TD>4.5</TD>
+    <TD>1.445</TD>
+    <TD></TD>
+    <TD>0.011</TD>
+    <TD>5.0</TD>
+    <TD>1.63</TD>
+    <TD></TD>
+    <TD>2.0</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>156.78792</TD>
+    <TD>-31.06778</TD>
+  </TR>
+  <TR>
+    <TD>112.6775089</TD>
+    <TD>-30.9622811</TD>
+    <TD>59890</TD>
+    <TD></TD>
+    <TD>4.64</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>4.5</TD>
+    <TD>0.92</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>4.0</TD>
+    <TD>0.7</TD>
+    <TD>:</TD>
+    <TD>2.0</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>112.67751</TD>
+    <TD>-30.96228</TD>
+  </TR>
+  <TR>
+    <TD>68.8876606</TD>
+    <TD>-30.5623414</TD>
+    <TD>29291</TD>
+    <TD></TD>
+    <TD>3.815</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>4.5</TD>
+    <TD>0.97</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>5.0</TD>
+    <TD>0.74</TD>
+    <TD></TD>
+    <TD>2.0</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>68.88766</TD>
+    <TD>-30.56234</TD>
+  </TR>
+  <TR>
+    <TD>271.4520289</TD>
+    <TD>-30.4240914</TD>
+    <TD>165135</TD>
+    <TD></TD>
+    <TD>2.985</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>1.5</TD>
+    <TD>1.005</TD>
+    <TD></TD>
+    <TD>0.008</TD>
+    <TD>2.0</TD>
+    <TD>0.78</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>271.45203</TD>
+    <TD>-30.42409</TD>
+  </TR>
+  <TR>
+    <TD>119.4171094</TD>
+    <TD>-30.3345697</TD>
+    <TD>65456</TD>
+    <TD></TD>
+    <TD>4.79</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>3.5</TD>
+    <TD>0.145</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.0</TD>
+    <TD>0.17</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>119.41711</TD>
+    <TD>-30.33457</TD>
+  </TR>
+  <TR>
+    <TD>229.4576625</TD>
+    <TD>-30.1486733</TD>
+    <TD>135758</TD>
+    <TD></TD>
+    <TD>4.345</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>2.7</TD>
+    <TD>1.1</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>2.7</TD>
+    <TD>1.06</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>229.45766</TD>
+    <TD>-30.14867</TD>
+  </TR>
+  <TR>
+    <TD>95.0783019</TD>
+    <TD>-30.0633672</TD>
+    <TD>44402</TD>
+    <TD></TD>
+    <TD>3.025</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.0</TD>
+    <TD>-0.195</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>3.0</TD>
+    <TD>-0.72</TD>
+    <TD>:</TD>
+    <TD>1.5</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>95.0783</TD>
+    <TD>-30.06337</TD>
+  </TR>
+  <TR>
+    <TD>285.6529744</TD>
+    <TD>-29.8801053</TD>
+    <TD>176687</TD>
+    <TD></TD>
+    <TD>2.605</TD>
+    <TD></TD>
+    <TD>0.008</TD>
+    <TD>3.0</TD>
+    <TD>0.075</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>2.2</TD>
+    <TD>0.06</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>285.65297</TD>
+    <TD>-29.88011</TD>
+  </TR>
+  <TR>
+    <TD>261.8386417</TD>
+    <TD>-29.8670139</TD>
+    <TD>157919</TD>
+    <TD></TD>
+    <TD>4.3</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>6.0</TD>
+    <TD>0.405</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>6.0</TD>
+    <TD>0.08</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>261.83864</TD>
+    <TD>-29.86701</TD>
+  </TR>
+  <TR>
+    <TD>275.2485069</TD>
+    <TD>-29.8281033</TD>
+    <TD>168454</TD>
+    <TD></TD>
+    <TD>2.705</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>3.0</TD>
+    <TD>1.38</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>2.2</TD>
+    <TD>1.53</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>275.24851</TD>
+    <TD>-29.8281</TD>
+  </TR>
+  <TR>
+    <TD>234.6640394</TD>
+    <TD>-29.7777539</TD>
+    <TD>139365</TD>
+    <TD></TD>
+    <TD>3.66</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>5.5</TD>
+    <TD>-0.17</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>4.5</TD>
+    <TD>-0.68</TD>
+    <TD></TD>
+    <TD>4.0</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>234.66404</TD>
+    <TD>-29.77775</TD>
+  </TR>
+  <TR>
+    <TD>68.3773031</TD>
+    <TD>-29.7664919</TD>
+    <TD>29085</TD>
+    <TD></TD>
+    <TD>4.51</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>3.0</TD>
+    <TD>0.98</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>3.0</TD>
+    <TD>0.73</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>68.3773</TD>
+    <TD>-29.76649</TD>
+  </TR>
+  <TR>
+    <TD>0.5830031</TD>
+    <TD>-29.7204139</TD>
+    <TD>224990</TD>
+    <TD></TD>
+    <TD>5.03</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>6.0</TD>
+    <TD>-0.15</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>6.2</TD>
+    <TD>-0.54</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>0.583</TD>
+    <TD>-29.72041</TD>
+  </TR>
+  <TR>
+    <TD>344.4126939</TD>
+    <TD>-29.6222361</TD>
+    <TD>216956</TD>
+    <TD></TD>
+    <TD>1.155</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>3.7</TD>
+    <TD>0.09</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>3.7</TD>
+    <TD>0.08</TD>
+    <TD>:</TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>344.41269</TD>
+    <TD>-29.62224</TD>
+  </TR>
+  <TR>
+    <TD>271.255105</TD>
+    <TD>-29.5800875</TD>
+    <TD>164975</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>)</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD></TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>0.7</TD>
+    <TD>:</TD>
+    <TD>1.0</TD>
+    <TD>A</TD>
+    <TD>W Sgr</TD>
+    <TD>Simbad</TD>
+    <TD>271.2551</TD>
+    <TD>-29.58009</TD>
+  </TR>
+  <TR>
+    <TD>217.0434444</TD>
+    <TD>-29.4916375</TD>
+    <TD>126769</TD>
+    <TD></TD>
+    <TD>4.96</TD>
+    <TD></TD>
+    <TD>0.012</TD>
+    <TD>4.5</TD>
+    <TD>-0.075</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>4.5</TD>
+    <TD>-0.4</TD>
+    <TD></TD>
+    <TD>2.0</TD>
+    <TD>C</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>217.04344</TD>
+    <TD>-29.49164</TD>
+  </TR>
+  <TR>
+    <TD>14.6515039</TD>
+    <TD>-29.3574492</TD>
+    <TD>5737</TD>
+    <TD></TD>
+    <TD>4.305</TD>
+    <TD></TD>
+    <TD>0.012</TD>
+    <TD>4.5</TD>
+    <TD>-0.155</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>6.0</TD>
+    <TD>-0.56</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>14.6515</TD>
+    <TD>-29.35745</TD>
+  </TR>
+  <TR>
+    <TD>111.0237606</TD>
+    <TD>-29.3031036</TD>
+    <TD>58350</TD>
+    <TD></TD>
+    <TD>2.455</TD>
+    <TD></TD>
+    <TD>0.018</TD>
+    <TD>4.0</TD>
+    <TD>-0.075</TD>
+    <TD></TD>
+    <TD>0.01</TD>
+    <TD>3.5</TD>
+    <TD>-0.72</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>111.02376</TD>
+    <TD>-29.3031</TD>
+  </TR>
+  <TR>
+    <TD>31.1226606</TD>
+    <TD>-29.2968189</TD>
+    <TD>12767</TD>
+    <TD></TD>
+    <TD>4.69</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>4.0</TD>
+    <TD>-0.16</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.0</TD>
+    <TD>-0.5</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>31.12266</TD>
+    <TD>-29.29682</TD>
+  </TR>
+  <TR>
+    <TD>239.2211519</TD>
+    <TD>-29.2140733</TD>
+    <TD>142669</TD>
+    <TD></TD>
+    <TD>3.88</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>5.5</TD>
+    <TD>-0.2</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.7</TD>
+    <TD>-0.81</TD>
+    <TD></TD>
+    <TD>3.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>239.22115</TD>
+    <TD>-29.21407</TD>
+  </TR>
+  <TR>
+    <TD>48.0188656</TD>
+    <TD>-28.9876181</TD>
+    <TD>20010</TD>
+    <TD></TD>
+    <TD>3.86</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>4.0</TD>
+    <TD>0.52</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>4.0</TD>
+    <TD>0.0</TD>
+    <TD>:</TD>
+    <TD>2.5</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>48.01887</TD>
+    <TD>-28.98762</TD>
+  </TR>
+  <TR>
+    <TD>104.6564519</TD>
+    <TD>-28.9720836</TD>
+    <TD>52089</TD>
+    <TD></TD>
+    <TD>1.505</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>5.0</TD>
+    <TD>-0.205</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>2.7</TD>
+    <TD>-0.93</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>104.65645</TD>
+    <TD>-28.97208</TD>
+  </TR>
+  <TR>
+    <TD>115.9519544</TD>
+    <TD>-28.9548258</TD>
+    <TD>62623</TD>
+    <TD></TD>
+    <TD>3.965</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>2.0</TD>
+    <TD>0.175</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>2.0</TD>
+    <TD>-0.1</TD>
+    <TD>:</TD>
+    <TD>1.5</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>115.95195</TD>
+    <TD>-28.95483</TD>
+  </TR>
+  <TR>
+    <TD>140.8010444</TD>
+    <TD>-28.8338731</TD>
+    <TD>81169</TD>
+    <TD></TD>
+    <TD>4.715</TD>
+    <TD></TD>
+    <TD>0.014</TD>
+    <TD>3.0</TD>
+    <TD>0.915</TD>
+    <TD></TD>
+    <TD>0.011</TD>
+    <TD>3.0</TD>
+    <TD>0.63</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>140.80104</TD>
+    <TD>-28.83387</TD>
+  </TR>
+  <TR>
+    <TD>244.5745767</TD>
+    <TD>-28.6140206</TD>
+    <TD>146624</TD>
+    <TD></TD>
+    <TD>4.795</TD>
+    <TD></TD>
+    <TD>0.011</TD>
+    <TD>2.0</TD>
+    <TD>0.015</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>1.7</TD>
+    <TD>0.0</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>244.57458</TD>
+    <TD>-28.61402</TD>
+  </TR>
+  <TR>
+    <TD>272.0207481</TD>
+    <TD>-28.4570931</TD>
+    <TD>165634</TD>
+    <TD></TD>
+    <TD>4.565</TD>
+    <TD></TD>
+    <TD>0.011</TD>
+    <TD>3.5</TD>
+    <TD>0.95</TD>
+    <TD></TD>
+    <TD>0.008</TD>
+    <TD>3.0</TD>
+    <TD>0.72</TD>
+    <TD>:</TD>
+    <TD>1.5</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>272.02075</TD>
+    <TD>-28.45709</TD>
+  </TR>
+  <TR>
+    <TD>115.8849442</TD>
+    <TD>-28.4108847</TD>
+    <TD>62576</TD>
+    <TD></TD>
+    <TD>4.585</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>2.0</TD>
+    <TD>1.63</TD>
+    <TD></TD>
+    <TD>0.008</TD>
+    <TD>1.7</TD>
+    <TD>2.0</TD>
+    <TD>:</TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>115.88494</TD>
+    <TD>-28.41088</TD>
+  </TR>
+  <TR>
+    <TD>113.8453869</TD>
+    <TD>-28.3693233</TD>
+    <TD>60863</TD>
+    <TD></TD>
+    <TD>4.635</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>3.0</TD>
+    <TD>-0.115</TD>
+    <TD></TD>
+    <TD>0.004</TD>
+    <TD>3.0</TD>
+    <TD>-0.39</TD>
+    <TD></TD>
+    <TD>1.75</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>113.84539</TD>
+    <TD>-28.36932</TD>
+  </TR>
+  <TR>
+    <TD>38.4612667</TD>
+    <TD>-28.2323436</TD>
+    <TD>16046</TD>
+    <TD></TD>
+    <TD>4.9</TD>
+    <TD></TD>
+    <TD>0.009</TD>
+    <TD>2.0</TD>
+    <TD>-0.055</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>2.2</TD>
+    <TD>-0.12</TD>
+    <TD></TD>
+    <TD>1.75</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>38.46127</TD>
+    <TD>-28.23234</TD>
+  </TR>
+  <TR>
+    <TD>248.9706406</TD>
+    <TD>-28.2160161</TD>
+    <TD>149438</TD>
+    <TD></TD>
+    <TD>2.835</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>6.5</TD>
+    <TD>-0.245</TD>
+    <TD></TD>
+    <TD>0.007</TD>
+    <TD>5.2</TD>
+    <TD>-1.03</TD>
+    <TD></TD>
+    <TD>3.5</TD>
+    <TD>*</TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>248.97064</TD>
+    <TD>-28.21602</TD>
+  </TR>
+  <TR>
+    <TD>234.2560408</TD>
+    <TD>-28.1350794</TD>
+    <TD>139063</TD>
+    <TD></TD>
+    <TD>3.605</TD>
+    <TD></TD>
+    <TD>0.013</TD>
+    <TD>4.5</TD>
+    <TD>1.375</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>5.0</TD>
+    <TD>1.58</TD>
+    <TD></TD>
+    <TD>2.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>234.25604</TD>
+    <TD>-28.13508</TD>
+  </TR>
+  <TR>
+    <TD>357.2314419</TD>
+    <TD>-28.1302678</TD>
+    <TD>223352</TD>
+    <TD></TD>
+    <TD>4.57</TD>
+    <TD></TD>
+    <TD>0.006</TD>
+    <TD>2.5</TD>
+    <TD>0.005</TD>
+    <TD></TD>
+    <TD>0.005</TD>
+    <TD>2.7</TD>
+    <TD>-0.02</TD>
+    <TD></TD>
+    <TD>1.5</TD>
+    <TD></TD>
+    <TD></TD>
+    <TD>Simbad</TD>
+    <TD>357.23144</TD>
+    <TD>-28.13027</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
