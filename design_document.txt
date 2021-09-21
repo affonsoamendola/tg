@@ -1,0 +1,123 @@
+BEACON SERVER
+-------------
+
+Projeto de desenvolvimento de software de banco de dados auto-alimentável de espectros de estrelas tipo Be
+
+Desenvolvido para o grupo Beacon do IAG-USP
+
+O programa consiste em duas partes, tecnicamente dois pedaços distintos de 
+software
+
+Back-end é o software q rodará num servidor IAG, guardando as informações dos
+espectros e respondendo requests por conteúdo
+
+O front-end é uma pagina web normal, hosteada no mesmo servidor, que servirá de 
+interface, enviando requests ao back-end e recebendo as informações de volta.
+
+
+Requisitos para o back-end
+
+--------------------------
+Banco de dados, nós precisamos guardar e indexar uma quantidade razoavel de 
+dados.
+
+Nós poderiamos escrever nosso próprio software de banco de dados astronomicos 
+que atende as nossas nescessidades, mas acredito q soluções open-source já 
+disponíveis sejam o suficiente.
+ 
+O seguinte texto vem da pagina https://osdb.stuchalk.domains.unf.edu/pages/about
+sobre um banco de dados chamado OSDB
+
+"The technology behind the site is the pretty standard stack of Apache, PHP, and 
+MySQL. The coding is done in the indispensible PHPStorm (available for free to 
+academics :) ) which is integrated into the GitHub repo for the site and configured 
+to automatically upload changes to where the site is hosted. This allows me to have 
+a local copy for testing and this public site. Although PHPStorm can integrate with 
+MySQL, I choose to admin the MySQL database using PHPMyAdmin which I highly 
+recommend. Finally, the look and feel and a lot of the functionality are done using 
+Bootstrap and jQuery, with the addition of flot for doing the spectral plots and  
+Jmol for the molecules. "
+
+Usar o stack de um servidor (Apache), uma interface programática (PHP) e o banco
+de dados em si (MySQL) era a ideia original ao pensar no software pela primeira
+vez, então ter um exemplo de software Open-Source usando exatamente o pretendido é 
+ótimo
+
+Apesar do OSDB ser um site voltado a química, a ideia por tras do software 
+controlando tudo é a mesma
+
+O back-end também precisaria fazer algumas analises de dados, então talvez seria
+nescessaria usar Python, com a biblioteca AstroPy, então talvez seja interessante
+ao invés de usar PHP como interface programatica, usar Python também (Ou unicamente)
+
+
+Requisitos para o front-end
+
+---------------------------
+
+O front-end só precisa ser uma pagina onde o usuário pode fazer requests em uma
+linguagem de query, existem varias linguagems de query, como ADQL, especificamente
+para astronomia, n confundir com ADQL q não é especificamente para astronomia em q o 
+A significa outra coisa alem de Astronomical.
+
+É também nescessário uma interface para fazer certas analises de dados simples e uma 
+interface de upload de espectros para o banco de dados.
+
+Alem disso talvez seja interessante uma interface de administrador protegida por
+senha
+
+Mas isso possivelmente seria algo para uma versão 2.0, no momento, administração
+remota do banco de dados usando SSH, PHPMyAdmin e etc é mais q o suficiente para
+uma primeira versão.
+
+
+Estrutura do Back-end
+---------------------
+
+
+|-----------|
+|			|
+|			|
+|	USER	|
+|			|
+|			|
+|-----------|
+
+	  | Webpage
+	  v
+
+|-----------|
+|			|
+|			|
+| PHP/Python|
+|			|
+|			|
+|-----------|
+	  
+	  |	Query (I dont know how php/python communicates with MySQL, or how to
+	  |        use ADQL instead of plain old SQL, I'll have to figure this one out)
+	  v
+
+|-----------|
+|			|
+|	MySQL	| -> Results are then sent back to the user.
+|			|
+|-----------|
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
